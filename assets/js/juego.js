@@ -74,13 +74,13 @@ const turnoComputadora = (puntosMinimos) => {
 
     setTimeout(() => {
         if (puntosComputadora === puntosMinimos) {
-            alert('Nadie gana :(');
+            alert('Nadie gana :c');
         } else if (puntosMinimos > 21) {
-            alert('Computadora gana');
+            alert('Computadora gana, buuuuu');
         } else if (puntosComputadora > 21) {
-            alert('Jugador gana');
+            alert('Ganaste, eres la mejor mi amor ❤');
         } else {
-            alert('Computadora gana');
+            alert('Computadora gana, buuuu');
         }
     }, 40);
 }
@@ -97,7 +97,7 @@ btnPedir.addEventListener('click', () => {
     divCartasJugador.append(imgCarta);
 
     if (puntosJugador > 21) {
-        console.warn('Lo siento mucho, perdiste');
+        console.warn('Lo siento mucho, perdiste amor :c');
         btnPedir.disabled = true;
         btnDetener.disabled = true;
         turnoComputadora(puntosJugador);
